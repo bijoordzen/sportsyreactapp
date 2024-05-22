@@ -1,34 +1,12 @@
-/* eventCard.css */
-
 .event-card {
-    display: flex;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .event-thumbnail {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .event-details {
-    padding: 20px;
-  }
-  
-  .event-title {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-  }
-  
-  .event-date,
-  .event-location {
-    margin-bottom: 10px;
-  }
-  
-  .event-description {
-    font-size: 0.9em;
-  }
-  
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  background-color: lightgreen;
+}
