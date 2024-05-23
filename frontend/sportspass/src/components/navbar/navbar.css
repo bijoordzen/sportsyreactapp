@@ -1,30 +1,57 @@
+/* Ensure the navbar spans the full width of the page */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style for the logo */
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style for the navigation links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Style for each navigation item */
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hover effect for the navigation links */
+.navbar-item a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
   }
-  
-  .navbar-logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
+
   .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width for the links container */
   }
-  
+
+  .navbar-item {
+    margin-bottom: 10px; /* Add some space between items */
+  }
+
   .navbar-item a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .navbar-item a:hover {
-    text-decoration: underline;
-  }
-  
+    font-size: 20px; /* Slightly larger 
