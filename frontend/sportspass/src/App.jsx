@@ -1,6 +1,5 @@
 // App.js or any other component
 import React from 'react';
-import Logo from './components/logo/Logo';
 import Navbar from './components/navbar/navbar';
 import Searchbar from './components/searchbar/Searchbar';
 import Footer from './components/footer/footer';
@@ -12,8 +11,6 @@ function App() {
     <div className="App">
       <header className="App-header">
       <div>
-
-      <Logo />
       <Navbar/>
       </div>
       <Searchbar />

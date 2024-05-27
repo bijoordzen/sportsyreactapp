@@ -2,7 +2,9 @@
 
 import React from 'react';
 import './eventcard.css';
-import {events} from './eventsData'
+
+//destructuring of all properties below by props
+
 const Eventcard = (props) => {
   return(
     <div className={ 'event-card'}>

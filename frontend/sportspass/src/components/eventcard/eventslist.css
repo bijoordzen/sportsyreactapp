@@ -1,0 +1,5 @@
+.event-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if there's not enough space */
+    justify-content: space-between; /* Distribute cards evenly along the horizontal axis */
+  }

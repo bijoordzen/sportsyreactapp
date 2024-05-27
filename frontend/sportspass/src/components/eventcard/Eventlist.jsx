@@ -1,12 +1,17 @@
 import React from 'react';
 import Eventcard from './Eventcard';
 import {events} from './eventsData';
+import './eventslist.css'
 
 const EventList = () => {
     
     return(
-        <div>
-            {events.map((event, i) => (<Eventcard title ={events[i].title} thumbnail ={events[i].thumbnail} date ={events[i].date} location ={events[i].location} description = {events[i].description} />))}
+        <div className='event-list'> {events.map((simpi, i) => 
+                (<Eventcard title ={events[i].title} 
+                    thumbnail ={events[i].thumbnail} 
+                     date ={events[i].date} 
+                        location ={events[i].location} 
+                        description = {events[i].description} />))}
 
         </div>
     ); 

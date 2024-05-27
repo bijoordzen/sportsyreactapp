@@ -1,12 +1,33 @@
+.event-card-container {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
 .event-card {
+  width: 300px; /* Set your desired width */
+  margin: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
   text-align: center;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .event-card:hover {
   transform: scale(1.05);
   background-color: lightgreen;
+}
+
+@media (max-width: 768px) {
+  .event-card {
+      width: calc(50% - 20px); /* Adjust as needed */
+  }
+}
+
+@media (max-width: 480px) {
+  .event-card {
+      width: calc(100% - 20px); /* Adjust as needed */
+  }
 }
