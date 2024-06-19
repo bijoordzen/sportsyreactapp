@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './components/navbar/navbar';
 import Searchbar from './components/searchbar/Searchbar';
 import Footer from './components/footer/footer';
-import EventList from './components/eventcard/EventList';
+import Eventlist from './components/eventcard/Eventlist';
 
 function App() {
   
@@ -14,7 +14,7 @@ function App() {
       <Navbar/>
       </div>
       <Searchbar />
-      <EventList/>
+      <Eventlist/>
       <Footer/>
 
         {/* Other components */}
