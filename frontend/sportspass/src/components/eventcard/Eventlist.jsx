@@ -3,11 +3,11 @@ import Eventcard from './Eventcard';
 import {events} from './eventsData';
 import './eventslist.css'
 
-const EventList = () => {
+const EventList = ({events}) => {
     
     return(
         <div className='event-list'> {events.map((simpi, i) => 
-                (<Eventcard title ={events[i].title} 
+                (<Eventcard key = {events.title} title ={events[i].title} 
                     thumbnail ={events[i].thumbnail} 
                      date ={events[i].date} 
                         location ={events[i].location} 

@@ -1,41 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './searchbar.css';
 
-const Searchbar = ({ onSearch }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const handleInputChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  const handleSearch = () => {
-    if (onSearch) {
-      onSearch(searchTerm);
-    }
-  };
-
-  const handleKeyPress = (event) => {
-    if (event.key === 'Enter') {
-      handleSearch();
-    }
-  };
-
+const Searchbar = ({placeholder, searchField, searchChange}) => {
   return (
-    <div className="search-bar-container">
-      <input
-        type="text"
-        className="search-bar-input"
-        placeholder="Search for sports events, teams, players..."
-        value={searchTerm}
-        onChange={handleInputChange}
-        onKeyPress={handleKeyPress}
+    <div className="search-box">
+      <input 
+        type="search" 
+        className="search-input" 
+        placeholder = {placeholder}
+        onChange={searchChange}
       />
-      <button
-        className="search-bar-button"
-        onClick={handleSearch}
-      >
-        Search
-      </button>
     </div>
   );
 };
