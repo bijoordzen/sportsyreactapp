@@ -1,2 +1,2 @@
-# literate-funicular
-Building a simple ticket stand app using react
+# sportsy react app
+App that searches sports events
